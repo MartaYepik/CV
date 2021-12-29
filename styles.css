@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,700;1,400&display=swap');
+body {
+    background-color: #24252A;
+    color: rgba(255, 255, 255, 0.938);
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Libre Franklin', sans-serif;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 100%;   
+}
+
+.header {
+    background-color: #202125;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px, 30px; 
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 700px) {
+    .header {
+        position:static;
+    }
+}
+
+.logo {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.navigation-bar {
+    padding: 20px;
+}
+.navigation-links li {
+    display: inline-block;
+    padding-left: 30px;
+}
+
+.navigation-links li a {
+    text-decoration: none;
+    color: beige;
+    transition: all 0,5ms, ease;
+}
+
+.navigation-links li a:hover {
+    color: cadetblue;
+}
+
+#title {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    #title {
+        display: block;
+    }
+}
+
+.top-container {
+    margin-top: 80px;
+    margin-left: 80px;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+@media (max-width:700px) {
+    .top-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+}
+
+.avatar-container {
+   margin-left: auto;
+   margin-top: 110px;
+   padding: 10px;
+}
+
+.avatar-container img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -8px 9px 14px rgba(255, 255, 255, 0.11);
+    margin: 24px;
+}
+
+@media (max-width:700px) {
+    .avatar-container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    .avatar-container img {
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: -8px 9px 10px rgba(255, 255, 255, 0.11);
+        margin: 14px;
+    }
+}
+
+.langueges tr {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.langueges td:nth-child(1) {
+    padding-right: 10px;
+}
+
+.langueges td:nth-child(2)::before {
+    content: "*";
+ }
+
+.langueges td:nth-child(2) {
+    font-style: italic;
+    color: cornsilk;
+}
+
+.skills {
+    columns: 3;
+    padding-top: 35px;
+}
+
+@media (max-width: 700px) {
+    .skills {
+        columns: 1;
+    }
+}
+
+.skills li {
+    padding-right: 25px; 
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    text-align: center;  
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;  
+}
+
+.data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.job-description {
+    margin-bottom: 35px;
+}
